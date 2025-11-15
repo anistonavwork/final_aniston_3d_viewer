@@ -2,12 +2,6 @@
   "categories": {
     "medical": [
       { "name": "Adult Heart and Lungs", "path": "../3d_models/medical/adult_heart_and_lungs.glb", "description": "" },
-      { "name": "Lungs Inhale (Front View)", "path": "../3d_models/medical/lungs_inhale_front_view.glb", "description": "" },
-      { "name": "Respiratory System", "path": "../3d_models/medical/respiratory_system.glb", "description": "" },
-      { "name": "Circulatory System", "path": "../3d_models/medical/circulatory_system.glb", "description": "" },
-      { "name": "Knee Anatomy", "path": "../3d_models/medical/knee_anatomy.glb", "description": "" },
-      { "name": "Shoulder Joint", "path": "../3d_models/medical/shoulder_joint.glb", "description": "" },
-      { "name": "Cerebellum", "path": "../3d_models/medical/cerebellum.glb", "description": "" },
       { "name": "Human Heart 3D Model Anatomy", "path": "../3d_models/medical/human_heart_3d_model__anatomy__medical_project.glb", "description": "" },
       { "name": "Heart with Labels 11", "path": "../3d_models/medical/heart_with_labels_11.glb", "description": "" }
     ],
@@ -17,62 +11,32 @@
       { "name": "A Plane of Change", "path": "../3d_models/education/a_plane_of_change.glb", "description": "" },
       { "name": "Field Lines of Positive and Negative Charge", "path": "../3d_models/education/field_lines_of_positive_and_negative_charge.glb", "description": "" },
       { "name": "Field Lines of 2q and −q Charge", "path": "../3d_models/education/field_lines_of_2q_and_-q_charge.glb", "description": "" },
-      { "name": "Field Lines of Two Positive Charge", "path": "../3d_models/education/field_lines_of_two_positive_charge.glb", "description": "" },
-      { "name": "Diamond Structure", "path": "../3d_models/education/diamond_structure.glb", "description": "" }
+      { "name": "Field Lines of Two Positive Charge", "path": "../3d_models/education/field_lines_of_two_positive_charge.glb", "description": "" }
     ],
     "planets": [
-      { "name": "Advanced Animated Terrain (Math Based)", "path": "../3d_models/planets/advanced_animated_terrain_based_in_math.glb", "description": "" },
       { "name": "Black Hole Galaxy", "path": "../3d_models/planets/black_hole_galaxy.glb", "description": "" },
       { "name": "Need Some Space", "path": "../3d_models/planets/need_some_space.glb", "description": "" },
-      { "name": "Spherical Stem Cell – Pure Potential", "path": "../3d_models/planets/spherical_stem_cell_-_pure_potential.glb", "description": "" },
-      { "name": "Gateway Core", "path": "../3d_models/planets/Gateway Core.glb", "description": "" },
       { "name": "Earth", "path": "../3d_models/planets/earth.glb", "description": "" },
       { "name": "Jupiter – Free Downloadable Model", "path": "../3d_models/planets/jupiter_-_free_downloadable_model.glb", "description": "" },
       { "name": "Saturno v1.1", "path": "../3d_models/planets/saturno_v1.1.glb", "description": "" },
-      { "name": "The Moon (Sharp)", "path": "../3d_models/planets/the_moon_sharp.glb", "description": "" },
-      { "name": "The Moon", "path": "../3d_models/planets/the_moon.glb", "description": "" },
-      { "name": "Venus", "path": "../3d_models/planets/venus.glb", "description": "" },
-      { "name": "Earth 1 12756", "path": "../3d_models/planets/Earth_1_12756.glb", "description": "" }
+      { "name": "The Moon (Sharp)", "path": "../3d_models/planets/the_moon_sharp.glb", "description": "" }
     ],
     "infrastructure": [
       { "name": "Neighbourhood City (Modular Lowpoly)", "path": "../3d_models/infrastructure/neighbourhood_city_modular_lowpoly.glb", "description": "" },
       { "name": "Torre Garten Tamano Real", "path": "../3d_models/infrastructure/torre_garten_tamano_real.glb", "description": "" },
-      { "name": "Architectural Building – Basic Architecture Design", "path": "../3d_models/infrastructure/architectural_building_basic_architecture_design.glb", "description": "" },
       { "name": "Pink Bedroom Miside", "path": "../3d_models/infrastructure/pink_bedroom_miside.glb", "description": "" }
-    ],
-    "others": [
-      { "name": "Permanence Code Wireframe – TRON Ares Tribute", "path": "../3d_models/others/permanence_code_wireframe_-_tron_ares_tribute.glb", "description": "" }
-    ],
-    "monuments": [
-      { "name": "Grabfigur", "path": "../3d_models/monuments/grabfigur.glb", "description": "" },
-      { "name": "Another Sword", "path": "../3d_models/monuments/another_sword.glb", "description": "" },
-      { "name": "Resting", "path": "../3d_models/monuments/resting.glb", "description": "" },
-      { "name": "Girl Looking Side", "path": "../3d_models/monuments/girl_looking_side.glb", "description": "" }
     ],
     "car_showroom": [
       { "name": "2017 Aston Martin Vantage GT12", "path": "../3d_models/car_showroom/2017_aston_martin_vantage_gt12.glb", "description": "" },
-      { "name": "BMW M5 F90", "path": "../3d_models/car_showroom/bmw_m5_f90.glb", "description": "" },
-      { "name": "2018 BMW M5", "path": "../3d_models/car_showroom/2018_bmw_m5.glb", "description": "" },
       { "name": "2026 Dodge Conquest Citadel", "path": "../3d_models/car_showroom/2026_dodge_conquest_citadel.glb", "description": "" },
       { "name": "2022 Lamborghini Countach LPI 800-4", "path": "../3d_models/car_showroom/2022_lamborghini_countach_lpi_800-4.glb", "description": "" },
       { "name": "Chevrolet Camaro ZL1", "path": "../3d_models/car_showroom/chevrolet_camaro_zl1.glb", "description": "" }
     ],
     "retail": [
-      { "name": "Diamond Ring – Day 1 (3D Inktober 2019)", "path": "../3d_models/retail/diamond_ring_-_day_1_3dinktober2019-ring.glb", "description": "" },
-      { "name": "Galaxy Glasses 8K PBR", "path": "../3d_models/retail/galaxy_glasses_8k_pbr.glb", "description": "" },
       { "name": "Balo Cam", "path": "../3d_models/retail/balo_cam.glb", "description": "" },
-      { "name": "Balo Xanh Bien", "path": "../3d_models/retail/balo_xanh_bien.glb", "description": "" },
-      { "name": "Balo EN", "path": "../3d_models/retail/balo_en.glb", "description": "" },
-      { "name": "Glasses", "path": "../3d_models/retail/glasses.glb", "description": "" },
       { "name": "Real Army Jacket", "path": "../3d_models/retail/real_army_jacket.glb", "description": "" },
-      { "name": "Tactical Bomber Jacket (Realistic 3D)", "path": "../3d_models/retail/tactical_bomber_jacket_realistic_3d_model.glb", "description": "" },
-      { "name": "Carrier Bag (Microsoft Copilot)", "path": "../3d_models/retail/carer_bag_made_with_microsoft_copilot.glb", "description": "" },
-      { "name": "Sun Glasses – Low Poly", "path": "../3d_models/retail/sun_glasses_-_low_poly.glb", "description": "" },
-      { "name": "Nike Air Max Plus 3 (Hombre)", "path": "../3d_models/retail/nike_air_max_plus_3_sneaker_hombre.glb", "description": "" },
-      { "name": "Worn Air Ryder", "path": "../3d_models/retail/worn_air_ryder.glb", "description": "" },
       { "name": "Firstmark x Converse", "path": "../3d_models/retail/firstmark_x_converse.glb", "description": "" },
-      { "name": "Bape Sta Pastel Pack (Green/Pink)", "path": "../3d_models/retail/bape_sta_pastel_pack_greenpink.glb", "description": "" },
-      { "name": "Adidas Terrex", "path": "../3d_models/retail/adidas_terrex.glb", "description": "" }
+      { "name": "Bape Sta Pastel Pack (Green/Pink)", "path": "../3d_models/retail/bape_sta_pastel_pack_greenpink.glb", "description": "" }
     ],
     "electronics": [
       { "name": "Apple Watch Series 5", "path": "../3d_models/electronics/apple_watch_series_5.glb", "description": "" },
