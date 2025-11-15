@@ -1,0 +1,78 @@
+<!-- RIGHT VERTICAL SIDEBAR (TOOLS) -->
+<aside id="right-slot" aria-label="Tools Sidebar">
+  <div id="right-sash" aria-hidden="true"></div>
+
+  <div class="rightbar">
+    <div class="right-head">
+      <strong>Tools</strong>
+      <button id="right-collapse-btn" class="btn-icon" title="Hide tools" aria-label="Hide tools">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+      </button>
+    </div>
+
+    <nav class="tool-list" id="tool-list">
+      <button class="tool-item" data-panel="open"><span class="tool-ico">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm0 2.5L18.5 9H14z"/></svg>
+      </span><span class="tool-label">Open File</span></button>
+
+      <button class="tool-item" data-panel="bg"><span class="tool-ico">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3a9 9 0 0 0 0 18c.9 0 1.5-.6 1.5-1.5 0-.9-.6-1.5-1.5-1.5H9a3 3 0 0 1 0-6h.5a2.5 2.5 0 1 0 0-5H10a9 9 0 0 0-8 9h2a7 7 0 1 1 7 7c-4.97 0-9-4.03-9-9S7.03 3 12 3z"/></svg>
+      </span><span class="tool-label">Background</span></button>
+
+      <button class="tool-item" data-panel="exp"><span class="tool-ico">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M6.76 4.84l-1.8-1.79L3.17 4.84l1.79 1.79 1.8-1.79zM1 13h3v-2H1v2zm10-9h2V1h-2v3zm7.03 1.05l-1.79 1.79 1.8 1.79 1.79-1.79-1.8-1.79zM17 13h3v-2h-3v2zM6.76 19.16l-1.8 1.79 1.79 1.79 1.8-1.79-1.79-1.79zM11 23h2v-3h-2v3zm7.03-2.21l1.79-1.79-1.79-1.79-1.79 1.79zM12 8a4 4 0 100 8 4 4 0 000-8z"/></svg>
+      </span><span class="tool-label">Exposure</span></button>
+
+      <button class="tool-item" data-panel="wire"><span class="tool-ico">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 3h18v18H3V3zm2 2v6h6V5H5zm8 0v6h6V5h-6zM5 13v6h6v-6H5zm8 0v6h6v-6h-6z"/></svg>
+      </span><span class="tool-label">Wireframe</span></button>
+
+      <button class="tool-item" data-panel="grid"><span class="tool-ico">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 3h18v18H3zM9 5v14M15 5v14M5 9h14M5 15h14"/></svg>
+      </span><span class="tool-label">Grid</span></button>
+
+      <button class="tool-item" data-panel="axes"><span class="tool-ico">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 21h2v-6h6v-2H5V7H3v14zm12-8l-4 8h2l.8-1.8h2.4L17 21h2l-4-8zm-.6 4l.6-1.3.6 1.3h-1.2z"/></svg>
+      </span><span class="tool-label">Axes</span></button>
+
+      <button class="tool-item" data-panel="autorotate"><span class="tool-ico">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 6V3L8 7l4 4V8c2.76 0 5 2.24 5 5 0 .9-.24 1.73-.66 2.45l1.46 1.46A6.97 6.97 0 0 0 19 13c0-3.87-3.13-7-7-7zm-5 2.55A6.97 6.97 0 0 0 5 13c0 3.87 3.13 7 7 7v3l4-4-4-4v3c-2.76 0-5-2.24-5-5 0-.9.24-1.73.66-2.45L6.2 8.55z"/></svg>
+      </span><span class="tool-label">Auto-Rotate</span></button>
+
+      <!-- NEW: Quick Animations -->
+      <button class="tool-item" data-panel="quickanim"><span class="tool-ico">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16v2H4V4zm0 7h16v2H4v-2zm0 7h16v2H4v-2z"/></svg>
+      </span><span class="tool-label">Quick Animations</span></button>
+
+      <button class="tool-item" data-panel="double"><span class="tool-ico">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M7 5h10v14H7zM5 3v18h14V3H5z"/></svg>
+      </span><span class="tool-label">Double-Sided</span></button>
+
+      <button class="tool-item" data-panel="pbr"><span class="tool-ico">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l9 4.9v9.8L12 22 3 16.7V6.9L12 2z"/></svg>
+      </span><span class="tool-label">Materials</span></button>
+
+      <button class="tool-item" data-panel="lights"><span class="tool-ico">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3a7 7 0 017 7c0 3.04-1.9 5.63-4.57 6.56L14 20h-4l-.43-3.44A7 7 0 015 10a7 7 0 017-7z"/></svg>
+      </span><span class="tool-label">Lights</span></button>
+
+      <button class="tool-item" data-panel="matreset"><span class="tool-ico">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 4a8 8 0 108 8h-2A6 6 0 1112 6V4z"/></svg>
+      </span><span class="tool-label">Material Reset</span></button>
+
+      <button class="tool-item" data-panel="fit"><span class="tool-ico">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M11 2v2a8 8 0 018 8h2A10 10 0 0011 2zM2 11h2a8 8 0 008 8v2A10 10 0 012 11z"/></svg>
+      </span><span class="tool-label">Fit to View</span></button>
+
+      <button class="tool-item" data-panel="reset"><span class="tool-ico">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M17.65 6.35A7.95 7.95 0 0012 4a8 8 0 100 16 8 8 0 007.75-6h-2.08A6 6 0 1112 6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>
+      </span><span class="tool-label">Reset</span></button>
+
+      <button class="tool-item" data-panel="screenshot"><span class="tool-ico">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M20 5h-3.2l-1.6-2H8.8L7.2 5H4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zM4 18V7h3.76l1.6-2h5.28l1.6 2H20v11z"/></svg>
+      </span><span class="tool-label">Screenshot</span></button>
+    </nav>
+
+    <input id="rp-file" type="file" accept=".glb,.gltf,.gbl" class="visually-hidden" />
+  </div>
+</aside>

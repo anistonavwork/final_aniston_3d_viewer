@@ -1,0 +1,29 @@
+<!-- Markup template for left sidebar -->
+ <!-- LEFT SIDEBAR COMPONENT (HTML template only) -->
+<aside id="left-slot">
+  <div class="sidebar-head flex" style="align-items:center; gap:8px; padding:10px; border-bottom:1px solid var(--border);">
+    <!-- Collapse button (JS will remove this whole aside from the DOM on collapse) -->
+    <button id="left-collapse-btn" class="btn-icon" title="Hide sidebar" aria-label="Hide sidebar">
+      <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+    </button>
+    <strong class="brand">3D Models</strong>
+  </div>
+
+  <!-- Category list container (JS renders categories from data/models.json).
+       Design: vertical list of expandable “bars” (accordion).
+       Each category becomes a <details> with a <summary> label and a model list inside. -->
+  <nav id="category-accordion" aria-label="Model categories" style="overflow:auto; height: calc(100% - 42px); padding:10px;">
+    <!-- JS will inject:
+      <details open>
+        <summary>Education</summary>
+        <ul class="model-list">
+          <li><button class="model-link" data-href="...">Model Name</button></li>
+          ...
+        </ul>
+      </details>
+    -->
+  </nav>
+
+  <!-- Resize handle (dragged by JS) -->
+  <div id="left-sash" aria-hidden="true"></div>
+</aside>

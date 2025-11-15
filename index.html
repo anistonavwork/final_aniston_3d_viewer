@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3D Viewer App</title>
+
+  <!-- Global + component styles -->
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/sidebar.css" />
+  <link rel="stylesheet" href="styles/viewer.css" />
+  <link rel="stylesheet" href="styles/rightpanel.css" />
+
+  <!-- Import map: ES modules without bundler -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Root mount. Components will be injected here by js/app.js -->
+  <div id="app-root" class="app-root" data-theme="dark"></div>
+
+  <!-- App Bootstrap -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+:root {
+  --bg: #000;
+  --text: #e8e8e8;
+  --muted: #a9a9a9;
+  --surface: #0b0b0b;
+  --surface-2: #121212;
+  --border: rgba(255,255,255,.12);
+  --accent: #4ea3ff;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow: 0 6px 30px rgba(0,0,0,.35);
+  --toolbar-h: 48px;
+  --sidebar-w: 300px;
+  --rightbar-w: 320px;
+}
+
+/* ---- Base Reset ---- */
+* { box-sizing: border-box; }
+html, body {
+  height: 100%;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 14px/1.4 system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+}
+img { display: block; max-width: 100%; }
+button, input { font: inherit; color: inherit; }
+a { color: #8ab4ff; text-decoration: none; }
+
+/* ---- App Root ---- */
+.app-root {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  grid-template-columns: var(--sidebar-w) 1fr auto;
+  grid-template-rows: 1fr;
+  gap: 0;
+}
+.app-root.no-left  { grid-template-columns: 1fr auto; }
+.app-root.no-right { grid-template-columns: var(--sidebar-w) 1fr; }
+.app-root.no-left.no-right { grid-template-columns: 1fr; }
+
+/* ---- Utilities ---- */
+.hidden { display: none !important; }
+.flex { display:flex; }
+.flex-col { display:flex; flex-direction:column; }
+.center { display:grid; place-items:center; }
+.btn, .btn-icon {
+  border: 1px solid var(--border);
+  background: #111;
+  color: #fff;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+}
+.btn:hover, .btn-icon:hover { background:#181818; }
+.btn { padding: 8px 12px; }
+.btn-icon { display:inline-grid; place-items:center; width:36px; height:36px; }
+
+/* ---- Sidebar / Viewer / Right Slots ---- */
+#left-slot {
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  position: relative;
+}
+#viewer-slot { position: relative; overflow: hidden; background:#000; }
+#right-slot { width: var(--rightbar-w); position: relative; }
+
+/* ---- Right Toolbox ---- */
+.toolbox {
+  position: absolute;
+  top: 12px; right: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  pointer-events: none;
+}
+.toolbar {
+  pointer-events: auto;
+  display: flex; gap: 8px;
+  padding: 8px;
+  border-radius: var(--radius);
+  background: rgba(20,20,20,.6);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(6px);
+}
+
+/* ---- Popouts ---- */
+.popout {
+  pointer-events: auto;
+  width: 280px;
+  background: rgba(20,20,20,.6);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  backdrop-filter: blur(6px);
+}
+.pop-head { display:flex; align-items:center; justify-content:space-between; padding:8px 10px; border-bottom:1px solid var(--border); }
+.pop-body { padding: 10px; }
+
+/* ---- Status ---- */
+#status {
+  position: fixed;
+  left: 16px;
+  bottom: 12px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: rgba(20,20,20,.6);
+  border: 1px solid var(--border);
+  z-index: 20;
+}
+
+/* --- Edge toggle button (Show Sidebar, left) --- */
+.edge-toggle-left {
+  position: fixed;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 40;
+  display: none;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: rgba(20,20,20,.75);
+  border: 1px solid var(--border);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}
+.edge-toggle-left:hover { background: rgba(28,28,28,.85); }
+.app-root.no-left ~ .edge-toggle-left {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.edge-toggle-left svg { width: 16px; height: 16px; }
+
+/* --- Edge toggle button (Show Tools, right) --- */
+.edge-toggle-right {
+  position: fixed;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 40;
+  display: none;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: rgba(20,20,20,.75);
+  border: 1px solid var(--border);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}
+.edge-toggle-right:hover { background: rgba(28,28,28,.85); }
+.app-root.no-right ~ .edge-toggle-right {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.edge-toggle-right svg { width: 16px; height: 16px; }
+
+/* responsive tweak */
+@media (max-width: 1024px) {
+  :root { --sidebar-w: 240px; }
+}
+@media (max-width: 800px) {
+  .app-root { grid-template-columns: 1fr; }
+}

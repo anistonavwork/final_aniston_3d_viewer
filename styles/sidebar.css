@@ -1,0 +1,91 @@
+ /* LEFT sidebar styles (categories + lists) */
+ /* LEFT SIDEBAR COMPONENT */
+
+#left-slot {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  transition: width 0.25s ease, opacity 0.25s ease;
+}
+
+#left-slot.hidden {
+  opacity: 0;
+  width: 0 !important;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.sidebar-head {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+#left-collapse-btn {
+  background: #111;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: #fff;
+  cursor: pointer;
+  width: 32px; height: 32px;
+  display: grid; place-items: center;
+}
+
+#category-accordion {
+  overflow-y: auto;
+  flex: 1;
+  padding: 10px;
+}
+
+/* Category accordion (auto-generated from JSON) */
+#category-accordion details {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  margin-bottom: 8px;
+  background: var(--surface-2);
+  overflow: hidden;
+}
+#category-accordion summary {
+  list-style: none;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-weight: 600;
+  background: rgba(255,255,255,0.04);
+}
+#category-accordion summary::marker,
+#category-accordion summary::-webkit-details-marker {
+  display: none;
+}
+#category-accordion details[open] summary {
+  background: rgba(255,255,255,0.08);
+}
+.model-list {
+  list-style: none;
+  margin: 0;
+  padding: 6px 10px 10px 10px;
+  display: grid;
+  gap: 4px;
+}
+.model-link {
+  text-align: left;
+  width: 100%;
+  padding: 6px 8px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: #111;
+  color: #fff;
+  cursor: pointer;
+}
+.model-link:hover { background:#181818; }
+
+/* Resize sash */
+#left-sash {
+  position: absolute;
+  top: 0; right: -3px;
+  width: 6px; height: 100%;
+  cursor: col-resize;
+}

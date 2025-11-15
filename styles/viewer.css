@@ -1,0 +1,33 @@
+/* CENTER VIEWER AREA */
+
+#viewer-slot {
+  background: #000;
+  position: relative;
+  overflow: hidden;
+}
+#viewer-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+/* Status pill — TOP CENTER, compact */
+#status {
+  position: absolute !important;   /* beat older fixed styles */
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;           /* prevent vertical stretching */
+  height: auto;                    /* force compact height */
+  max-width: calc(100% - 40px);
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 600;
+  background: rgba(20,20,20,.6);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  color: var(--text);
+  z-index: 15;
+  pointer-events: none;
+  white-space: nowrap;
+  height: 40px;
+}
