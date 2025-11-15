@@ -52,7 +52,8 @@ export async function initViewer() {
 
   // Scene / Camera / Controls
   const scene = new THREE.Scene();
-  scene.background = new THREE.Color(0x000000);
+  scene.background = new THREE.Color(0xffffff);
+
 
   const camera = new THREE.PerspectiveCamera(45, 1, 0.01, 5000);
   camera.position.set(2.5, 1.2, 3.5);
